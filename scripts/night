@@ -1,2 +1,0 @@
-#/bin/zsh
-konsole --new-tab --profile night --nofork
