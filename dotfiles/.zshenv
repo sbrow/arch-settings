@@ -1,2 +1,2 @@
 typeset -U path
-path=(~/bin $path[@])
+path=(~/arch-settings/bin $path[@])
