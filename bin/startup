@@ -1,0 +1,5 @@
+#!/bin/zsh
+echo "runnig pullall"
+~/arch-settings/bin/pullall
+echo "running locked"
+~/arch-settings/bin/locked

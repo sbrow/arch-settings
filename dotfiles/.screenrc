@@ -1,0 +1,23 @@
+# hardstatus on
+hardstatus alwayslastline
+# hardstatus string "%{= KW} %H [%`] %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %=%C%a %Y-%M-%d"
+hardstatus string "[%`] %-Lw %{+b}%f% %t%{-b} %+Lw%= %c %m/%d/%Y"
+# caption always
+
+backtick 0 30 30 sh -c 'screen -ls | grep --color=no -o "$PPID[^[:space:]]*"'
+# backtick 0 30 30 sh -c 'screen -ls | grep --color=no -o "[^[:space:]]*"' 
+
+defscrollback 1000
+
+
+# 256 colors
+attrcolor b ".I"
+# termcapinfo konsole 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+term screen-256color
+termcapinfo xterm* ti@:te@
+# defbce on
+
+# mouse tracking allows to switch region focus by clicking
+mousetrack off
+
+startup_message off
