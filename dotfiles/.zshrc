@@ -91,7 +91,11 @@ plugins=(git vi-mode screen autoenv archlinux)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sls='screen -ls'
 alias scd='screen -d'
+
 alias gstat='git status'
+alias gpush='git push'
+alias gpull='git pull'
+alias gall='git add --all && git commit'
 
 scr() {
 	screen -r "$1"
