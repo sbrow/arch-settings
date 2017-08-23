@@ -85,7 +85,16 @@ plugins=(git vi-mode screen autoenv archlinux)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias sls='screen -ls'
+alias scd='screen -d'
 
+scr() {
+	screen -r "$1"
+}
+
+scx() {
+	screen -x "$1"
+}
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR

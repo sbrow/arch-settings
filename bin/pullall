@@ -1,4 +1,4 @@
-#! /bin/zsh
+#!/bin/zsh
 cd ~/arch-settings/
 git pull
 cd ~/CSCI165/
