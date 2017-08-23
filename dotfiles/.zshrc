@@ -13,6 +13,10 @@ ZSH_THEME="af-magic"
 
 export VISUAL="vim"
 
+setopt CORRECT
+
+setopt CORRECT_ALL
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -33,7 +37,7 @@ export VISUAL="vim"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -87,6 +91,7 @@ plugins=(git vi-mode screen autoenv archlinux)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sls='screen -ls'
 alias scd='screen -d'
+alias gstat='git status'
 
 scr() {
 	screen -r "$1"

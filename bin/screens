@@ -1,6 +1,5 @@
 #!/bin/zsh
-screen -dmS background
-screen -S background -t 0 -X stuff ~/arch-settings/bin/startup
 screen -dmS yakuake
-screen -dmS ssh
+screen -X -S yakuake -t 1
+screen -S yakuake -t 1 -X stuff ~/arch-settings/bin/startup
 screen -dmS konsole
