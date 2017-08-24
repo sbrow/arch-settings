@@ -91,23 +91,19 @@ plugins=(git vi-mode screen autoenv archlinux)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sls='screen -ls'
 alias scd='screen -d'
+alias scr='screen -r'
+alias scx='srceen -x'
 
 alias gstat='git status'
 alias gpush='git push'
 alias gpull='git pull'
 alias gall='git add --all && git commit'
+
 alias javar="java -cp ./bin/"
 alias jr="java -cp ./bin/"
 alias javacc="javac -cp ./bin/ -d ./bin/ -sourcepath ./src/"
 alias jc="javac -cp ./bin/ -d ./bin/ -sourcepath ./src/"
 
-scr() {
-	screen -r "$1"
-}
-
-scx() {
-	screen -x "$1"
-}
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
