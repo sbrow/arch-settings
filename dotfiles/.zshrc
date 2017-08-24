@@ -96,6 +96,10 @@ alias gstat='git status'
 alias gpush='git push'
 alias gpull='git pull'
 alias gall='git add --all && git commit'
+alias javar="java -cp ./bin/"
+alias jr="java -cp ./bin/"
+alias javacc="javac -cp ./bin/ -d ./bin/ -sourcepath ./src/"
+alias jc="javac -cp ./bin/ -d ./bin/ -sourcepath ./src/"
 
 scr() {
 	screen -r "$1"
