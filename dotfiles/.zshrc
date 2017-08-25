@@ -106,6 +106,9 @@ alias jc='javac -cp ./bin/ -d ./bin/ -sourcepath ./src/'
 
 alias battery='acpi -i'
 
+alias pacinst='sudo pacman -S'
+alias yainst='yaourt -S'
+
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
