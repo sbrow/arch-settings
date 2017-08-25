@@ -99,10 +99,12 @@ alias gpush='git push'
 alias gpull='git pull'
 alias gall='git add --all && git commit'
 
-alias javar="java -cp ./bin/"
-alias jr="java -cp ./bin/"
-alias javacc="javac -cp ./bin/ -d ./bin/ -sourcepath ./src/"
-alias jc="javac -cp ./bin/ -d ./bin/ -sourcepath ./src/"
+alias javar='java -cp ./bin/'
+alias jr='java -cp ./bin/'
+alias javacc='javac -cp ./bin/ -d ./bin/ -sourcepath ./src/'
+alias jc='javac -cp ./bin/ -d ./bin/ -sourcepath ./src/'
+
+alias battery='acpi -i'
 
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
