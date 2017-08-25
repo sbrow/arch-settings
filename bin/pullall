@@ -1,7 +1,7 @@
 #!/bin/zsh
 cd ~/arch-settings/
 git pull
-cd ~/CSCI165/
+cd ~/Code/
 git pull
 cd ~/.config/sublime-text-3/Packages/User/
 git pull
