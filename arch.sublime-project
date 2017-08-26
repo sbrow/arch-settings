@@ -1,0 +1,16 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"arch.sublime-workspace",
+				".project"
+			],
+			"folder_exclude_patterns":
+			[
+			],
+			"path": "."
+		}
+	]
+}

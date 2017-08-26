@@ -1,0 +1,28 @@
+#!/bin/zsh
+#First installer to run after inital arch install
+
+
+#Installs Arch, Package Builder, vim, zsh, NetworkManager, pkgstats.
+pacstrap /mnt base base-devel vim zsh NetworkManager zip pkgstats
+
+#chroot into new system
+arch-chroot
+
+#Uninstalls vi
+pacman -Runsc vi --noconfirm
+
+#Enable NetworkManager on boot.
+systemctl enable NetworkManager
+
+#Installs intel-ucode
+./sub-installers/intel
+
+#Install ranger CL file manager
+pacman -S ranger --noconfirm
+
+#Install openssh
+pacman -s openssh --noconfirm
+
+echo "installer_2 has finished. Please login and then run installer_3 after system restarts."
+sleep 5
+system reboot

@@ -1,0 +1,16 @@
+#!/bin/zsh
+#sets up and syncs my repositories.
+
+
+#Won't work until git is setup for github, ssh keys obtained, etc.
+cd ~/
+
+git clone git@github.com:sbrow/Code.git
+
+git clone git@github.com:sbrow/arch-settings.git
+#for all files in ./arch-settings/dotfiles
+#rm ~/<filename>
+#ln ./arch-settings/dotfiles/<filename> ~/<filename>
+
+cd ~/.config/sublime-text-3/Packages/
+git clone git@github.com:sbrow/sublime-text-3

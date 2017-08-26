@@ -1,0 +1,8 @@
+#!/bin/zsh
+#Installs CLI versions of GUI programs
+
+#CLI Browser
+sudo pacman -S lynx
+
+#Torrent Client
+sudo pacman -S transmission-cli

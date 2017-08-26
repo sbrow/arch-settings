@@ -1,0 +1,42 @@
+#!/bin/zsh
+#Second installer to run after installing arch.
+
+cd ~/
+
+#Install git
+sudo pacman -S git --noconfirm
+
+#Install yaourt
+
+#Get package-query and make it.
+git clone https://aur.archlinux.org/package-query.git
+cd package-query
+makepkg -si
+cd ..
+rm -r ./package-query
+
+#Get yaourt and make it.
+git clone https://aur.archlinux.org/yaourt.git
+cd yaourt
+makepkg -si
+cd ..
+rm -r ./yaourt
+
+#Finish zsh installation
+yaourt -S oh-my-zsh
+yaourt -S zsh-completions --noconfirm
+yaourt -S zsh-syntax-highlighting --noconfirm
+
+#Install wifi components.
+./sub-installers/wifi
+
+#Install KDE
+./sub-installers/kde
+
+#Install GUI apps OR CLI apps.
+#ALWAYS COMMENT OUT ONE OF THESE LINES
+./sub-installers/gui
+#./sub-installers/cli
+
+#Install commandline programs
+./sub-installers/console-based

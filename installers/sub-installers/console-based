@@ -1,0 +1,14 @@
+#!/bin/zsh
+#Installs commandline programs
+
+#Terminal Window Manager
+sudo pacman -S screen --noconfirm
+
+#Mobile SSH
+sudo pacman -S mosh --noconfirm
+
+#Automatically sets Environment variables.
+yaourt -S autoenv --noconfirm
+
+#Allows downgrading of packages.
+yaourt -S downgrade --noconfirm

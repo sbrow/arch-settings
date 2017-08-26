@@ -1,0 +1,15 @@
+#!/bin/zsh
+#Installs everything needed for the KDE Desktop Environment
+
+#Simple Desktop Display Manager
+sudo pacman -S sddm --noconfirm
+
+#KDE Plasma
+sudo pacman -S plasma-meta --noconfirm
+
+#Enable sddm
+sudo systemctl enable sddm
+sudo systemctl start sddm
+
+#KDE phone remote integration
+yaourt -S kdeconnect-git --noconfirm

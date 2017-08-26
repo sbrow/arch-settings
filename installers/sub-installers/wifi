@@ -1,0 +1,19 @@
+#!/bin/zsh
+#Installs wifi packages
+
+#WiFi Protocols
+sudo pacman -S iw --noconfirm
+
+#WPA Protocols
+sudo pacman -S wpa_supplicant --noconfirm
+
+#Broadcom drivers for Apple computers
+sudo pacman -S broadcom-wl --noconfirm
+
+sudo vim /etc/modprobe.d/wifi.conf {
+blackist b43
+blacklist bcrm80211
+} :x
+sudo modprobe wl
+sudo systemctl enable wl
+sudo systemctl start wl

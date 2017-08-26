@@ -1,0 +1,44 @@
+#!/bin/zsh
+#Installs GUI applications
+
+#Browser
+yaourt -S google-chrome --noconfirm
+sudo pacman -S qutebrowser --noconfirm
+
+#Text editor
+yaourt -S sublime-text-dev --noconfirm
+
+#Chat
+yaourt -S discord --noconfirm
+
+#File Manager
+yaourt -S dolphin --noconfirm
+
+#Consoles
+sudo pacman -S yakuake --noconfirm
+sudo pacman -S konsole --noconfirm
+
+#PDF Viewer
+yaourt -S xreader --noconfirm
+
+#Image Viewer
+yaourt -S gwenview --noconfirm
+
+#Screenshot Tool
+yaourt -S spectacle --noconfirm
+
+#Pacman/Yaourt frontedn
+yaourt -S pamac-aur --noconfirm
+yaourt -S pamac-tray-appindicator --noconfirm
+
+#Utilities
+yaourt -S synergy --noconfirm
+yaourt -S redshift-git --noconfirm
+yaourt -S rsibreak-git --noconfirm
+
+#Fonts
+yaourt -S ttf-dejavu --noconfirm
+yaourt -S ttf-google-fonts --noconfirm
+
+#Torrent Client
+yaourt -S transmission-qt --noconfirm
