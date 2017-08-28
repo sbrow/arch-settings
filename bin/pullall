@@ -5,4 +5,6 @@ cd ~/Code/
 git pull
 cd ~/.config/sublime-text-3/Packages/User/
 git pull
+cd ~/csci205/
+git pull
 echo "All repos up to date!"
