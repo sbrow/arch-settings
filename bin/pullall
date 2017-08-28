@@ -1,10 +1,11 @@
 #!/bin/zsh
+echo "Pulling arch-settings..."
 cd ~/arch-settings/
 git pull
+echo "Pulling Code..."
 cd ~/Code/
 git pull
-cd ~/.config/sublime-text-3/Packages/User/
-git pull
+echo "Pulling csci205..."
 cd ~/csci205/
 git pull
 echo "All repos up to date!"
