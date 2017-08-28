@@ -7,6 +7,9 @@ sudo pacman -S screen --noconfirm
 #Mobile SSH
 sudo pacman -S mosh --noconfirm
 
+#Wake-on-Lan
+sudo pacman -S wol --noconfirm
+
 #Automatically sets Environment variables.
 yaourt -S autoenv --noconfirm
 

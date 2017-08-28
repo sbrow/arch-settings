@@ -15,7 +15,7 @@ yaourt -S discord --noconfirm
 yaourt -S dolphin --noconfirm
 
 #Consoles
-sudo pacman -S yakuake --noconfirm
+sudo pacman -S yakuake --noconfirmtt
 sudo pacman -S konsole --noconfirm
 
 #PDF Viewer

@@ -1,4 +1,4 @@
-extra/accountsservice 0.6.45-1
+:extra/accountsservice 0.6.45-1
 core/acl 2.2.52-3
 extra/adwaita-icon-theme 3.24.0-1 (gnome)
 extra/alsa-lib 1.1.3-1
