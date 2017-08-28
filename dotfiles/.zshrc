@@ -95,7 +95,6 @@ alias scr='screen -r'
 alias scx='srceen -x'
 
 alias gstat='git status'
-:x
 alias gpush='git push'
 alias gpull='git pull'
 alias gall='git add --all && git commit'
