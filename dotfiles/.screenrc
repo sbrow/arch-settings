@@ -21,3 +21,5 @@ termcapinfo xterm* ti@:te@
 mousetrack off
 
 startup_message off
+
+shell "/bin/zsh"
