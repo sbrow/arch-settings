@@ -109,6 +109,8 @@ alias battery='acpi -i'
 alias pacinst='sudo pacman -S'
 alias yainst='yaourt -S'
 
+alias vpn='sudo openvpn /etc/openvpn/server/server.conf'
+
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
