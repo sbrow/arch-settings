@@ -1,3 +1,5 @@
 {
-  "gitignore_sync": true
+  "gitignore_sync": true,
+  "statusbar_branch": false,
+  "statusbar_status": false
 }

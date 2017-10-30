@@ -13,6 +13,8 @@
             "false": "False",
             "(int|var) ": "",
             "null": {"value": "None", "kind":"word" },
+            "print ": "print(",
+            "(?=print\\(.*)$(?<!\\))":")",
             "this": "self",
             "true": "True",
         },
