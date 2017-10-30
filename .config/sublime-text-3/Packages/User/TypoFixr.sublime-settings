@@ -1,0 +1,20 @@
+{
+    "execute_on_save": true,
+    "syntax": {
+        "all": {
+        },
+        "java": {
+            "(?<!^)(?<!else)(?<![{}\\(\\)])$": { "value": ";", "kind":"none" }
+        },
+        "javascript": {
+            "int": "var"
+        },
+        "python": {
+            "false": "False",
+            "(int|var) ": "",
+            "null": {"value": "None", "kind":"word" },
+            "this": "self",
+            "true": "True",
+        },
+    }
+}
