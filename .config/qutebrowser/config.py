@@ -100,6 +100,7 @@ c.url.default_page = 'www.google.com'
 # Type: Dict
 c.url.searchengines = {
     'DEFAULT': 'http://www.google.com/search?h1=en&q={}',
+    'amazon': 'https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords={}',
     'ap': 'https://www.archlinux.org/packages/?q={}',
     'aur': 'https://aur.archlinux.org/packages/?O=0&K={}',
     'aw': 'https://wiki.archlinux.org?search={}',
@@ -117,7 +118,10 @@ c.url.searchengines = {
 
 # The page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = ['https://trello.com/b/ExMxGRNe/college', 'https://alexa.amazon.com/spa/index.html#lists/todos']
+c.url.start_pages = [
+    'https://trello.com/b/ExMxGRNe/college',
+    'https://alexa.amazon.com/spa/index.html#lists/todos'
+]
 
 # The format to use for the window title. The following placeholders are
 # defined:  * `{perc}`: The percentage as a string like `[10%]`. *
