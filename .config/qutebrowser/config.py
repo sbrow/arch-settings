@@ -3,7 +3,7 @@
 #   qute://help/configuring.html
 #   qute://help/settings.html
 
-# Uncomment self to still load settings configured via autoconfig.yml
+# Uncomment this to still load settings configured via autoconfig.yml
 # config.load_autoconfig()
 
 # Aliases for commands. The keys of the given dictionary are the
@@ -28,6 +28,20 @@ c.content.local_content_can_access_file_urls = True
 # Whether locally loaded documents are allowed to access remote urls.
 # Type: Bool
 c.content.local_content_can_access_remote_urls = True
+
+# Number of milliseconds to wait before removing finished downloads. If
+# set to -1, downloads are never removed.
+# Type: Int
+c.downloads.remove_finished = -1
+
+# The editor (and arguments) to use for the `open-editor` command. `{}`
+# gets replaced by the filename of the file to be edited.
+# Type: ShellCommand
+c.editor.command = ['subl3', '-n -w', '{}']
+
+# Encoding to use for the editor.
+# Type: Encoding
+c.editor.encoding = 'utf-8'
 
 # The maximum time in minutes between two history items for them to be
 # considered being from the same browsing session. Items with less time
@@ -98,36 +112,17 @@ c.url.default_page = 'www.google.com'
 # used by prepending the search engine name to the search term, e.g.
 # `:open google qutebrowser`.
 # Type: Dict
-c.url.searchengines = {
-    'DEFAULT': 'http://www.google.com/search?h1=en&q={}',
-    'amazon': 'https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords={}',
-    'ap': 'https://www.archlinux.org/packages/?q={}',
-    'aur': 'https://aur.archlinux.org/packages/?O=0&K={}',
-    'aw': 'https://wiki.archlinux.org?search={}',
-    'dict': 'http://www.dictionary.com/browse/{}?s=t',
-    'gd': 'https://drive.google.com/drive/search?q={}',
-    'gs': 'https://developers.google.com/s/results/?q={}&p=%2Fapps-script%2F',
-    'history': 'https://myactivity.google.com/myactivity?q={}',
-    'irish': 'http://www.teanglann.ie/en/fgb/{}',
-    'leo': 'dict.leo.org/englisch-deutsch/{}',
-    'pack': 'https://www.archlinux.org/packages/?q={}',
-    'pc': 'https://packagecontrol.io?search={}',
-    'pkg': 'https://packagecontrol.io/search/{}'
-}
-    
+c.url.searchengines = {'DEFAULT': 'http://www.google.com/search?h1=en&q={}', 'amazon': 'https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords={}', 'ap': 'https://www.archlinux.org/packages/?q={}', 'aur': 'https://aur.archlinux.org/packages/?O=0&K={}', 'aw': 'https://wiki.archlinux.org?search={}', 'dict': 'http://www.dictionary.com/browse/{}?s=t', 'gd': 'https://drive.google.com/drive/search?q={}', 'gs': 'https://developers.google.com/s/results/?q={}&p=%2Fapps-script%2F', 'history': 'https://myactivity.google.com/myactivity?q={}', 'irish': 'http://www.teanglann.ie/en/fgb/{}', 'leo': 'dict.leo.org/englisch-deutsch/{}', 'pack': 'https://www.archlinux.org/packages/?q={}', 'pc': 'https://packagecontrol.io?search={}', 'pkg': 'https://packagecontrol.io/search/{}'}
 
 # The page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = [
-    'https://trello.com/b/ExMxGRNe/college',
-    'https://alexa.amazon.com/spa/index.html#lists/todos'
-]
+c.url.start_pages = ['https://trello.com/b/ExMxGRNe/college', 'https://alexa.amazon.com/spa/index.html#lists/todos']
 
 # The format to use for the window title. The following placeholders are
 # defined:  * `{perc}`: The percentage as a string like `[10%]`. *
 # `{perc_raw}`: The raw percentage, e.g. `10` * `{title}`: The title of
 # the current web page * `{title_sep}`: The string ` - ` if a title is
-# set, empty otherwise. * `{id}`: The internal window ID of self window.
+# set, empty otherwise. * `{id}`: The internal window ID of this window.
 # * `{scroll_pos}`: The page scroll position. * `{host}`: The host of
 # the current web page. * `{backend}`: Either ''webkit'' or
 # ''webengine'' * `{private}` : Indicates when private mode is enabled.
