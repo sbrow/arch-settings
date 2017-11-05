@@ -49,7 +49,6 @@
 	"hide_minimap": true,
 	"ignored_packages":
 	[
-		"Clipboard Manager",
 		"Vintage",
 		"VintageES"
 	],

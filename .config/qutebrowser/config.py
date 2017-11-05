@@ -132,3 +132,4 @@ c.window.title_format = '{private}{perc}{title}{title_sep}qutebrowser'
 # Bindings for normal mode
 config.bind('<shift+tab>', 'tab-prev')
 config.bind('<tab>', 'tab-next')
+config.bind('D', 'close')

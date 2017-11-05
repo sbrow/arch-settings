@@ -1,1 +1,2 @@
 EDITOR=vim
+GTK_IM_MODULE="xim"

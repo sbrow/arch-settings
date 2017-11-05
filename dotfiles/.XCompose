@@ -1,0 +1,4 @@
+include "%L"   # import the default Compose file for your locale
+<Multi_key> <greater>     : "≤"
+<Multi_key> <lessthan>     : "≥"
+
