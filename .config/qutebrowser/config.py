@@ -112,7 +112,24 @@ c.url.default_page = 'www.google.com'
 # used by prepending the search engine name to the search term, e.g.
 # `:open google qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'http://www.google.com/search?h1=en&q={}', 'amazon': 'https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords={}', 'ap': 'https://www.archlinux.org/packages/?q={}', 'aur': 'https://aur.archlinux.org/packages/?O=0&K={}', 'aw': 'https://wiki.archlinux.org?search={}', 'dict': 'http://www.dictionary.com/browse/{}?s=t', 'gd': 'https://drive.google.com/drive/search?q={}', 'gs': 'https://developers.google.com/s/results/?q={}&p=%2Fapps-script%2F', 'history': 'https://myactivity.google.com/myactivity?q={}', 'irish': 'http://www.teanglann.ie/en/fgb/{}', 'leo': 'dict.leo.org/englisch-deutsch/{}', 'pack': 'https://www.archlinux.org/packages/?q={}', 'pc': 'https://packagecontrol.io?search={}', 'pkg': 'https://packagecontrol.io/search/{}'}
+c.url.searchengines = {
+ 'DEFAULT': 'http://www.google.com/search?h1=en&q={}',
+ 'amazon': 'https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords={}',
+ 'ap': 'https://www.archlinux.org/packages/?q={}',
+ 'aur': 'https://aur.archlinux.org/packages/?O=0&K={}',
+ 'aw': 'https://wiki.archlinux.org?search={}',
+ 'dict': 'http://www.dictionary.com/browse/{}?s=t',
+ 'gd': 'https://drive.google.com/drive/search?q={}',
+ 'gs': 'https://developers.google.com/s/results/?q={}&p=%2Fapps-script%2F',
+ 'history': 'https://myactivity.google.com/myactivity?q={}',
+ 'irish': 'http://www.teanglann.ie/en/fgb/{}',
+ 'leo': 'dict.leo.org/englisch-deutsch/{}',
+ 'pack': 'https://www.archlinux.org/packages/?q={}',
+ 'pc': 'https://packagecontrol.io?search={}',
+ 'pkg': 'https://packagecontrol.io/search/{}',
+ 'sheets': 'http://www.google.com/search?h1=en&q=google spreadsheet {}',
+ }
+
 
 # The page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
