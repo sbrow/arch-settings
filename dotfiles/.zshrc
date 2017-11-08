@@ -99,7 +99,7 @@ alias gpush='git push'
 alias gpull='git pull'
 
 function gall() {
-	if [ $1 -eq 0]
+	if [ -n "$1"]
 	then
 		git add --all
 		git commit
