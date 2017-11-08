@@ -105,6 +105,7 @@ function gall() {
 		git commit
 	else
 		git add --all
+		echo git commit -m $1
 		git commit -m $1
 	fi
 }
