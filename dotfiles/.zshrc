@@ -97,7 +97,17 @@ alias scx='srceen -x'
 alias gstat='git status'
 alias gpush='git push'
 alias gpull='git pull'
-alias gall='git add --all && git commit'
+
+function gall() {
+	if [ $1 -eq 0]
+	then
+		git add --all
+		git commit
+	else
+		git add --all
+		git commit -m $1
+	fi
+}
 
 alias javar='java -cp ./bin/'
 alias jr='java -cp ./bin/'
