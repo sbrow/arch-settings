@@ -111,6 +111,14 @@ alias yainst='yaourt -S'
 
 alias vpn='sudo openvpn /etc/openvpn/server/server.conf'
 
+function lsftype() {
+	find . -name "$1" -type f
+}
+
+function rmftype() {
+	find . -name "$1" -type f -delete
+}
+
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
