@@ -217,7 +217,15 @@
    */
   { "caption": ":selection fields - Convert Selection to Snippet-like Fields", "command": "selection_fields"},
   { "caption": ":selection add - Add last Selection to Current Selection", "command": "add_last_selection"},
-  { "caption": ":selection split - Split Selection With Given Separator", "command": "split_selection"},
+  {
+    "caption": ":selection split - Split Selection With Given Separator",
+    "command": "run_multiple_commands",
+    "args": {
+        "commands": [
+        { "command": "add_last_selection" },
+        { "command": "split_selection" }
+    ]}
+  },
   { "caption": ":selection all - Select All That Match Current Selection", "command": "multi_find_all"},
   { "caption": ":selection trim - Trim Whitespace from selection", "command": "strip_selection"},
 

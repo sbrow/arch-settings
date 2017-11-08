@@ -84,7 +84,10 @@
   },
   { "keys": ["'"], "command": "sublime_bookmark",
         "args" : { "type" : "goto" },
-    "context": [{"key": "setting.command_mode"}]
+    "context": [
+      {"key": "setting.command_mode"},
+      { "key": "vi_state_empty"}
+    ]
   },
   { "keys": ["ctrl+n"], "command": "find_under_expand" },
   {

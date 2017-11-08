@@ -9,7 +9,12 @@
 # Aliases for commands. The keys of the given dictionary are the
 # aliases, while the values are the commands they map to.
 # Type: Dict
-c.aliases = {'q': 'quit', 'w': 'session-save', 'wq': 'quit --save', 'x': 'quit --save'}
+c.aliases = {
+    'q': 'quit',
+    'w': 'session-save',
+    'wq': 'quit --save',
+    'x': 'quit --save'
+}
 
 # Whether quitting the application requires a confirmation.
 # Type: ConfirmQuit
@@ -128,6 +133,7 @@ c.url.searchengines = {
  'pc': 'https://packagecontrol.io?search={}',
  'pkg': 'https://packagecontrol.io/search/{}',
  'sheets': 'http://www.google.com/search?h1=en&q=google spreadsheet {}',
+ 'wiki': 'https://en.wikipedia.org/wiki/Special:Search?search={}'
  }
 
 
