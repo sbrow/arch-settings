@@ -115,7 +115,11 @@
   { "keys": ["ctrl+shift+t"], "command": "reopen_last_file"},
   { "keys": ["ctrl+g"], "command": "goto_symbol_in_project"},
   { "keys": ["ctrl+shift+p"], "command": "prompt_select_workspace" },
-  { "keys": ["/"], "command": "show_panel", "args": {"panel": "find", "reverse": false}, "context": [{"key":"vi_command_mode_aware"}]},
+  { "keys": ["/"], "command": "show_panel", "args": {"panel": "find", "reverse": false},
+    "context": [
+      {"key":"vi_command_mode_aware"},
+      {"key":"vi_state_empty"}
+    ]},
   { "keys": ["?"], "command": "show_panel", "args": {"panel": "find", "reverse": true}, "context": [{"key":"vi_command_mode_aware"}]},
   { "keys": ["n"], "command": "find_next", "context": [{"key":"vi_command_mode_aware"}, {"key": "vi_state_empty"}]},
   { "keys": ["N"], "command": "find_prev", "context": [{"key":"vi_command_mode_aware"}, {"key": "vi_state_empty"}]},
