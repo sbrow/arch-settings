@@ -185,11 +185,13 @@
   { "keys": ["ctrl+b"], "command": "build",
     "context": [{"key": "build_fake", "operator":"equal", "operand":true}]
   },
-{ "keys": ["ctrl+alt+f"], "command": "multi_find_allas"},
+  { "keys": ["ctrl+alt+f"], "command": "multi_find_allas"},
 
   { "keys": ["ctrl+shift+enter"], "command": "replace_next", "args": {"close_panel": true},
      "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
-  }
+  },
+  { "keys": ["ctrl+shift+k"], "command": "swap_line_up" },
+  { "keys": ["ctrl+shift+j"], "command": "swap_line_down" }
   // { "keys": ["tab"], "command": "hide_overlay", "context": [
   //   { "key": "overlay_visible", "operator": "equals", "operand": true}
   // ]},
