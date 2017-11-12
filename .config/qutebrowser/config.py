@@ -55,6 +55,8 @@ c.editor.encoding = 'utf-8'
 # Type: Int
 c.history_gap_interval = 30
 
+
+[4, 3, 2, 1, 0]
 # Switch to insert mode when clicking flash and other plugins.
 # Type: Bool
 c.input.insert_mode.plugins = True
@@ -133,7 +135,8 @@ c.url.searchengines = {
  'pc': 'https://packagecontrol.io?search={}',
  'pkg': 'https://packagecontrol.io/search/{}',
  'sheets': 'http://www.google.com/search?h1=en&q=google spreadsheet {}',
- 'wiki': 'https://en.wikipedia.org/wiki/Special:Search?search={}'
+ 'wiki': 'https://en.wikipedia.org/wiki/Special:Search?search={}',
+ 'yt': "https://youtube.com/results?search_query={}"
  }
 
 

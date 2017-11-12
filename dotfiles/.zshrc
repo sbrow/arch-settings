@@ -109,6 +109,10 @@ function gall() {
 	fi
 }
 
+function svim() {
+	sudo vim $1
+}
+
 alias javar='java -cp ./bin/'
 alias jr='java -cp ./bin/'
 alias javacc='javac -cp ./bin/ -d ./bin/ -sourcepath ./src/'
