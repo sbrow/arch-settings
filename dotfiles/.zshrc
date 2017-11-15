@@ -125,8 +125,6 @@ alias yainst='yaourt -S'
 
 alias vpn='sudo openvpn /etc/openvpn/server/server.conf'
 
-alias matterbridge = '~/matterbridge-master/bin/matterbridge -conf ~/matterbridge-master/matterbridge.toml'
-
 function lsftype() {
 	find . -name "$1" -type f
 }
