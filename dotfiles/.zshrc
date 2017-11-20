@@ -97,6 +97,7 @@ alias scx='srceen -x'
 alias gstat='git status'
 alias gpush='git push'
 alias gpull='git pull'
+alias gundo='git reset --hard'
 
 function gall() {
 	if [ -z "$1" ]

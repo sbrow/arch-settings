@@ -135,6 +135,7 @@ c.url.searchengines = {
  'pc': 'https://packagecontrol.io?search={}',
  'pkg': 'https://packagecontrol.io/search/{}',
  'sheets': 'http://www.google.com/search?h1=en&q=google spreadsheet {}',
+ 'slack': 'https://epfgames.slack.com/apps/search?q={}',
  'wiki': 'https://en.wikipedia.org/wiki/Special:Search?search={}',
  'yt': "https://youtube.com/results?search_query={}"
  }
