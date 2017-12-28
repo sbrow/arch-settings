@@ -13,6 +13,10 @@ ZSH_THEME="af-magic"
 
 export VISUAL="vim"
 
+export GOPATH=$HOME/GitHub/Code/go
+export GOBIN=$GOPATH/bin
+export PATH=$GOBIN:$PATH
+
 setopt CORRECT
 
 setopt CORRECT_ALL
