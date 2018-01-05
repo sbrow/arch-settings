@@ -129,6 +129,7 @@ alias pacinst='sudo pacman -S'
 alias yainst='yaourt -S'
 
 alias vpn='sudo openvpn /etc/openvpn/server/server.conf'
+alias version='uname -r'
 
 function lsftype() {
 	find . -name "$1" -type f
