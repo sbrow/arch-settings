@@ -126,6 +126,7 @@ c.url.searchengines = {
  'aur': 'https://aur.archlinux.org/packages/?O=0&K={}',
  'aw': 'https://wiki.archlinux.org?search={}',
  'dict': 'http://www.dictionary.com/browse/{}?s=t',
+ 'gatherer': 'http://gatherer.wizards.com/Pages/Search/Defaualt.aspx?name={}',
  'gd': 'https://drive.google.com/drive/search?q={}',
  'gs': 'https://developers.google.com/s/results/?q={}&p=%2Fapps-script%2F',
  'history': 'https://myactivity.google.com/myactivity?q={}',
@@ -137,7 +138,8 @@ c.url.searchengines = {
  'sheets': 'http://www.google.com/search?h1=en&q=google spreadsheet {}',
  'slack': 'https://epfgames.slack.com/apps/search?q={}',
  'wiki': 'https://en.wikipedia.org/wiki/Special:Search?search={}',
- 'yt': "https://youtube.com/results?search_query={}"
+ 'yt': "https://youtube.com/results?search_query={}",
+ 'go': "http://golang.org/pkg/{}"
  }
 
 

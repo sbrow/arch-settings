@@ -1,0 +1,2 @@
+#!/bin/zsh
+distccd --daemon -a 10.0.1.11 -a 10.0.1.21 -a 127.0.0.1 --no-detach --log-stderr -j3 --zeroconf
