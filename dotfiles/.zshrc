@@ -5,6 +5,8 @@ compinit
 promptinit
 prompt walters
 
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
+typeset -A ZSH_HIGHLIGHT_STYLES    
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
 
@@ -16,10 +18,11 @@ export VISUAL="vim"
 export GOPATH=$HOME/GitHub/Code/go
 export GOBIN=$GOPATH/bin
 export PATH=$GOBIN:$PATH
+export GIT_TERMINAL_PROMPT=1
 
 setopt CORRECT
 
-setopt CORRECT_ALL
+# setopt CORRECT_ALL
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

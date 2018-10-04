@@ -1,5 +1,3 @@
 #!/bin/zsh
 screen -dmS konsole
-screen -S konsole -t matter -X screen ~/matterbridge-master/bin/matterbridge -conf ~/matterbridge-master/matterbridge.toml
-#screen -S konsole -t dccd -X screen distccd --daemon --allow-private --no-detach --log-stderr
-screen -S konsole -t mon -X screen distccmon-gnome
+screen -S konsole -t matter -X screen ~/matterbridge.sh
